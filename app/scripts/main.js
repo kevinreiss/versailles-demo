@@ -9,9 +9,9 @@
     BASE_MAP = 'http://libimages.princeton.edu/loris2/' +
       'exhibits%2FVersailles%2Fversailles_13%2FImage00120_vert.jp2/info.json',
     THUMBNAIL_SIZE = 250,
-    GEOJSON_URL =  'http://github-raw-cors-proxy.herokuapp.com/' +
-      'eliotjordan/versailles-demo/gh-pages/app/scripts/map.json';
-
+    //GEOJSON_URL =  'http://github-raw-cors-proxy.herokuapp.com/' +
+    //  'eliotjordan/versailles-demo/gh-pages/app/scripts/map.json';
+    GEOJSON_URL = 'http://libphp-prod.princeton.edu/versailles/map.json';
   // create leaflet-iiif map
   var map = L.map('map', {
     center: [0, 0],
