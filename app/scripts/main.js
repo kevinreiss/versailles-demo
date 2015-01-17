@@ -4,14 +4,15 @@
   'use strict';
 
   L.Icon.Default.imagePath = 'images/';
-
-  var BASE_ITEM_URL = 'http://libphp-prod.princeton.edu/versailles/item/',
+  // BASE and GEOJSON expect the app to be run on the same 
+  // host as the companion website
+  var BASE_ITEM_URL = '/versailles/item/',
     BASE_MAP = 'http://libimages.princeton.edu/loris2/' +
       'exhibits%2FVersailles%2Fversailles_13%2FImage00120_vert.jp2/info.json',
     THUMBNAIL_SIZE = 250,
     //GEOJSON_URL =  'http://github-raw-cors-proxy.herokuapp.com/' +
     //  'eliotjordan/versailles-demo/gh-pages/app/scripts/map.json';
-    GEOJSON_URL = 'http://libphp-prod.princeton.edu/versailles/map.json';
+    GEOJSON_URL = '/versailles/map.json';
   // create leaflet-iiif map
   var map = L.map('map', {
     center: [0, 0],
